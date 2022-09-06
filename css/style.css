@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
@@ -32,21 +33,21 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 900;
   color: #fff;
   line-height: 1.05;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 900;
   color: var(--clr-dark);
 }
 
 h3 {
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 img {
@@ -59,9 +60,9 @@ img {
   background-color: var(--clr-main);
   color: #fff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
-  padding: 8px 24px;
+  padding: 0.8rem 2.4rem;
   border-radius: 11px;
   cursor: pointer;
   transition: all 0.3s;
@@ -75,14 +76,14 @@ img {
   /* display: flex;
   flex-direction: column; */
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 2.4rem;
   max-width: 1000px;
   /* height: 100vh; */
 }
 
 .header {
   background-color: var(--clr-main-light);
-  padding: 24px 0;
+  padding: 2.4rem 0;
 }
 
 .header .container {
@@ -93,18 +94,18 @@ img {
 }
 
 .logo-img {
-  width: 64px;
+  width: 6.4rem;
 }
 
 .nav-list {
   display: flex;
-  gap: 24px;
+  gap: 2.4rem;
   list-style: none;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--clr-dark);
   text-decoration: none;
   transition: all 0.3s;
@@ -120,7 +121,7 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--clr-dark);
-  padding: 96px 0;
+  padding: 9.6rem 0;
   flex: 1;
 }
 
@@ -129,18 +130,19 @@ img {
   justify-content: space-between;
   align-items: center;
   flex: auto;
+  gap: 2.4rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 1.2rem;
   max-width: 400px;
 }
 
 .hero-subtext {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--clr-offwhite);
   line-height: 1.4;
 }
@@ -153,7 +155,7 @@ img {
 .section-cards {
   display: flex;
   align-items: center;
-  padding: 96px 0;
+  padding: 9.6rem 0;
   flex: 1;
 }
 
@@ -162,19 +164,19 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 36px;
+  gap: 3.6rem;
 }
 
 .all-cards {
   display: flex;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .card-img {
@@ -185,7 +187,7 @@ img {
 }
 
 .card-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   color: var(--clr-text-gray);
 }
@@ -197,23 +199,24 @@ img {
   justify-content: center;
   flex: 1;
   background-color: var(--clr-bg-gray);
-  padding: 96px 0;
+  padding: 9.6rem 0;
 }
 
 .quote-content {
   max-width: 700px;
+  padding: 0 2.4rem;
 }
 
 .quote {
-  font-size: 30px;
+  font-size: 3rem;
   font-style: italic;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
   line-height: 1.2;
   color: var(--clr-dark);
 }
 
 .quote-author {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   text-align: right;
   color: var(--clr-dark);
@@ -224,7 +227,7 @@ img {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 96px 0;
+  padding: 9.6rem 2.4rem;
 }
 
 .section-cta .container {
@@ -233,6 +236,7 @@ img {
   align-items: center;
   flex: auto;
   background-color: var(--clr-main);
+
   border-radius: 11px;
 }
 
@@ -241,18 +245,19 @@ img {
   justify-content: space-between;
   align-items: center;
   flex: auto;
-  padding: 36px 96px;
+  padding: 3.6rem 9.6rem;
 }
 
 .section-cta-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.4rem;
   max-width: 400px;
 }
 
 .section-cta-subtext {
   color: var(--clr-offwhite);
+  font-size: 1.4rem;
 }
 
 .section-cta .btn {
@@ -263,7 +268,48 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.4rem;
   background-color: var(--clr-dark);
   color: var(--clr-offwhite);
-  padding: 36px 0;
+  padding: 3.6rem 0;
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero {
+    padding: 8rem 0;
+  }
+
+  .section-hero .container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.6rem;
+  }
+
+  .all-cards {
+    flex-direction: column;
+    max-width: 17.5rem;
+  }
+
+  .section-cards {
+    padding: 6.4rem 0;
+  }
+
+  .quote-content {
+    max-width: 75%;
+  }
+
+  .section-cta-content {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .section-cta-text {
+    align-items: center;
+    text-align: center;
+  }
 }
